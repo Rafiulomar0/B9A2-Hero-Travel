@@ -3,6 +3,7 @@
   --primary-color: #ff5400;
   --secondary-color: #131318;
   --navlink-color: #424247;
+  --margin-top: 5rem;
 }
 
 * {
@@ -20,13 +21,21 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  border: 0;
+  font-size: 1.6rem;
+  padding: 1.8rem 5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: var(--navlink-color);
 }
 
 header {
-  margin-top: 2rem;
+  margin-top: var(--margin-top);
 }
 
 .nav-bar {
@@ -91,6 +100,7 @@ header {
     url("./Images/hero-banner.png");
   background-size: cover;
   border-radius: 1rem;
+  margin-top: var(--margin-top);
 }
 
 .hero-info {
@@ -119,6 +129,29 @@ header {
 
 input[type="text"] {
   height: 5.2rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  padding: 1rem 0 1rem 2rem;
+  border: 0;
+  outline: 0;
+}
+
+label {
+  position: relative;
+}
+
+.search-icon-dropdown {
+  position: absolute;
+  top: 0.5rem;
+  left: 18rem;
+  z-index: 1;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 400;
 }
 
 /* Responsive Design */
@@ -139,6 +172,31 @@ input[type="text"] {
   }
   .brand {
     color: var(--secondary-color);
-    font-size: 1rem;
+    font-size: 2rem;
+  }
+  /* hero */
+  .hero-section {
+    width: 98%;
+    margin: 0 0.5rem;
+    height: 80rem;
+    margin: 5ch auto;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-des {
+    font-size: 1.4rem;
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+  .hero-search {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  input[type="text"] {
+    margin: 1rem 0;
+  }
+  .btn-primary {
+    margin-top: 1rem;
   }
 }
