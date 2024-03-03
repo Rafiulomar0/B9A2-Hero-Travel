@@ -10,6 +10,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 10px;
 }
@@ -17,6 +18,9 @@ html {
 body {
   font-family: "Mulish", sans-serif;
   font-style: normal;
+}
+
+.container {
   max-width: 1270px;
   margin: 0 auto;
 }
@@ -44,6 +48,7 @@ header {
   align-items: center;
   margin-right: 1.2rem;
   margin-left: 1.2rem;
+  margin-top: var(--margin-top);
 }
 
 .brand-brand {
@@ -365,6 +370,39 @@ label {
   transform: rotate(-20deg);
 }
 
+/* footer */
+
+footer {
+  text-align: center;
+  margin-top: var(--margin-top);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #13131829;
+  padding: 5rem;
+}
+
+footer hr {
+  border: 0.01rem solid #13131817;
+  width: 60%;
+  margin: 4rem 0;
+}
+
+footer p {
+  font-size: 1.6rem;
+  width: 45%;
+  margin: 2rem 0;
+  color: #13131883;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 600px) {
   .nav-bar {
@@ -504,5 +542,10 @@ label {
   }
   .travel-letter-offer h1 {
     font-size: 1.6rem;
+  }
+  /* footer */
+  footer p {
+    font-size: 1.4rem;
+    width: 90%;
   }
 }
