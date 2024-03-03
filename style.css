@@ -5,12 +5,19 @@
   --navlink-color: #424247;
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   font-style: normal;
   max-width: 1270px;
   margin: 0 auto;
-  font-size: 10px;
 }
 
 a {
@@ -70,6 +77,48 @@ header {
 .active-nav-li {
   color: var(--primary-color);
   font-weight: 600;
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+  background: linear-gradient(to bottom, #131318b7, #13131800),
+    url("./Images/hero-banner.png");
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.hero-info {
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 6.4rem;
+  font-weight: 800;
+}
+
+.hero-des {
+  padding: 2rem 0;
+  font-size: 1.6rem;
+  max-width: 67.7rem;
+  line-height: 3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 200;
+}
+
+.hero-search {
+  background-color: #ffffff36;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+input[type="text"] {
+  height: 5.2rem;
 }
 
 /* Responsive Design */
