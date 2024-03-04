@@ -244,7 +244,7 @@ label {
 .section-place {
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
+  margin: 1rem auto;
 }
 
 /* services */
