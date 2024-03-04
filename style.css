@@ -595,4 +595,7 @@ footer p {
     width: 95%;
     margin: 0 auto;
   }
+  .ask-question h1 {
+    font-size: 2.4rem;
+  }
 }
